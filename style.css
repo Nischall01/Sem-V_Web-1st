@@ -1,0 +1,84 @@
+.navlist-header,
+.navlist-footer {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 1cap 3cap 1cap 3cap;
+  /* border: 5px black solid; */
+  display: flex;
+  align-items: center; /* Ensures vertical alignment of all items */
+  justify-content: center;
+}
+
+.navbar-header,
+.navbar-footer {
+  /* border: 1px red solid; */
+  display: flex;
+  align-items: center; /* Ensures vertical alignment of all items */
+  justify-content: center;
+}
+
+li {
+  text-decoration: none;
+  padding: 1cap 5cap 1cap 5cap;
+}
+
+.title {
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: center;
+}
+
+.logo-header_footer,
+.copyright-footer {
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: center;
+}
+
+.Alienoid-logo {
+  justify-self: center;
+  width: 77px;
+  height: 77px;
+}
+
+/* section { */
+/* border: 1px black solid; */
+/* } */
+
+.albums_singles-table {
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  /* border: 1px black solid; */
+}
+
+td {
+  border: 1px black solid;
+  text-align: center;
+  padding: 4cap;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: seagreen;
+}
+
+.album,
+.single {
+  display: flex;
+  justify-content: center;
+  border: 1px lightgrey solid;
+}
+
+.artist-picture {
+  display: flex;
+  justify-content: center;
+}
