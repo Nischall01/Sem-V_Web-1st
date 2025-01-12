@@ -25,7 +25,7 @@
         <ul class="navlist-header">
           <li><a href="Artists.html">Artists</a></li>
           <li><a href="Shop.html">Shop</a></li>
-          <li><a href="SendSignal.html">Send Signal</a></li>
+          <li><a href="SendSignal.html" class="current-page">Send Signal</a></li>
         </ul>
       </nav>
     </header>
@@ -36,48 +36,47 @@
     <br />
 
     <main>
-      <section>
-        <h2>Contact Us</h2>
-        <form>
-          <fieldset>
-            <div>
-              <label for="fullname">Your Name (required)</label>
-              <input type="text" id="fullname" required />
+    <div class="contactform" align="center">            
+
+      <table border="0" class="container">
+        <tr>
+          <td width="50%" class="rightside">
+            <h1>
+              Contact Us
+           </h1>
+            <div class="rightside" align="center">
+              <form action="">
+                <input type="text" placeholder="Name *" />
+                <br />
+                <input type="email" placeholder="Email *" />
+                <br />
+                <input type="text" placeholder="Company" />
+                <br />
+                <input type="tel" placeholder="Phone" />
+                <br />
+                <input type="text" placeholder="Subject" />
+                <br />
+                <textarea name="" id="" placeholder="Message"></textarea>
+                <br />
+                <br />
+                <button class="submitbutton" align="center">Submit</button>
+              </form>
             </div>
-            <br />
-            <div>
-              <label for="emailaddress">Your Email (required)</label>
-              <input type="email" id="emailaddress" required />
-            </div>
-            <br />
-            <div>
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" />
-            </div>
-            <br />
-            <div>
-              <label for="message" style="vertical-align: top"
-                >Your Message</label
-              >
-              <textarea id="message" rows="5" cols="50"></textarea>
-            </div>
-            <br />
-            <div>
-              <button type="submit">Send</button>
-            </div>
-          </fieldset>
-        </form>
-      </section>
+          </td>
+        </tr>
+      </table>
+    </div>
     </main>
 
     <br />
     <br />
 
     <footer>
-      <div>
-        <a href="mailto:info@alienoid.com">info@alienoid.com</a>
+      <a href="mailto:info@alienoid.com" class="copyright-footer">info@alienoid.com</a>
+      <div class="copyright-footer">
         <p>Copyright &copy; 2024 Alienoid. All rights reserved.</p>
       </div>
+
     </footer>
     <br />
   </body>

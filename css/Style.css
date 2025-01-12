@@ -41,11 +41,21 @@ li {
   height: 77px;
 }
 
+#searchbar{
+  display: flex;
+  justify-content: center;
+}
 /* section { */
 /* border: 1px black solid; */
 /* } */
 
 .albums_singles-table {
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: center;
+}
+
+.merch-table {
   /* border: 1px black solid; */
   display: flex;
   justify-content: center;
@@ -91,3 +101,49 @@ a:hover {
 /* .borderedtextdiv {
   border: 1px red solid;
 } */
+
+.current-page{
+  color: seagreen;
+}
+
+.rightside {
+  background-color: white;
+  flex: 1;
+}
+.leftsidetitle {
+  color: white;
+  text-align: center;
+}
+.leftsidetext {
+  color: wheat;
+  text-align: center;
+}
+.rightsidetext {
+  text-align: center;
+}
+form {
+  justify-content: center;
+}
+
+.submitbutton {
+  background-color: cyan;
+  border-radius: 40px;
+  padding: 15px;
+  width: 150px;
+}
+input {
+  padding: 10px;
+  margin: 10px;
+}
+
+.contactform{
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  align-self: center;
+}
+
+textarea {
+  width: 185px;
+  height: 85px;
+}
