@@ -4,7 +4,6 @@
   padding: 0;
   list-style-type: none;
   padding: 1cap 3cap 1cap 3cap;
-  /* border: 5px black solid; */
   display: flex;
   align-items: center; /* Ensures vertical alignment of all items */
   justify-content: center;
@@ -52,14 +51,10 @@ li {
   justify-content: center;
 }
 
-table {
-  /* border: 1px black solid; */
-}
-
 td {
   border: 1px black solid;
   text-align: center;
-  padding: 4cap;
+  padding: 5cap;
 }
 
 a {
@@ -69,16 +64,30 @@ a {
 
 a:hover {
   color: seagreen;
+  /* text-decoration: underline; */
+  .album-image,.single-image {
+    transform: scale(1.2);
+  }
 }
 
 .album,
 .single {
   display: flex;
   justify-content: center;
-  border: 1px lightgrey solid;
+  border: 1.5px lightgrey solid;
+}
+
+.album-image,.single-image {
+  width: 88px;
+  height: 88px;
+  transition: transform 0.2s;
 }
 
 .artist-picture {
   display: flex;
   justify-content: center;
 }
+
+/* .borderedtextdiv {
+  border: 1px red solid;
+} */
