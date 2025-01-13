@@ -1,0 +1,257 @@
+
+body {
+  font-family: 'Times New Roman', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.navlist-header,
+.navlist-footer {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 1cap 3cap 1cap 3cap;
+  display: flex;
+  align-items: center; /* Ensures vertical alignment of all items */
+  justify-content: center;
+}
+
+.navbar-header,
+.navbar-footer {
+  display: flex;
+  align-items: center; /* Ensures vertical alignment of all items */
+  justify-content: center;
+  border: 1px green solid;
+  box-shadow: 4px 2px 2px seagreen; 
+}
+
+li {
+  text-decoration: none;
+  padding: 1cap 5cap 1cap 5cap;
+}
+
+.title {
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: center;
+}
+
+.logo-header_footer,
+.copyright-footer {
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: center;
+}
+
+.Alienoid-logo {
+  justify-self: center;
+  width: 77px;
+  height: 77px;
+}
+
+#searchbar{
+  display: flex;
+  justify-content: center;
+}
+
+.albums_singles-table {
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: center;
+}
+
+.merch-table {
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: center;
+}
+
+td {
+  border: 1px black solid;
+  text-align: center;
+  padding: 5cap;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: seagreen;
+  /* text-decoration: underline; */
+  .album-image,.single-image {
+    transform: scale(1.2);
+  }
+}
+
+.album,
+.single {
+  display: flex;
+  justify-content: center;
+  border: 1.5px lightgrey solid;
+}
+
+.album-image,.single-image {
+  width: 88px;
+  height: 88px;
+  transition: transform 0.2s;
+}
+
+.artist{
+  display: grid;
+  place-content: center;
+}
+.artist-picture {
+  display: flex;
+  justify-content: center;
+}
+
+.artist-info {
+  max-width: 75ch; /* Optimal line length for readability */
+  padding: 2rem;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.artist-info p {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin: 0;
+  letter-spacing: 0.015em;
+}
+
+.artist-info a {
+  color: seagreen;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-size: 1em;
+  margin: 0;
+  letter-spacing: 0.015em;
+}
+  .artist-info a:hover{
+    color: palevioletred;
+  }
+
+/* Hover effect */
+.artist-info:hover {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.current-page{
+  color: seagreen;
+  /* text-decoration: underline; */
+}
+
+/* .borderedtextdiv {
+  border: 1px red solid;
+} */
+
+.ContactForm {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: whitesmoke;
+  border: 2px solid #007bff;
+  border-radius: 15px;
+  }
+
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+.field h5 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.field input, 
+.field textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background: #f8f8f8;
+}
+
+.field input:focus, 
+.field textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: gray;
+}
+
+.ButtonDiv {
+  text-align: center;
+}
+
+.bluebutton {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bluebutton:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ContactForm {
+    padding: 1rem;
+  }
+  
+  .field input, 
+  .field textarea {
+    padding: 0.7rem;
+  }
+}
+
+/* Optional: Animation for form fields */
+.field {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

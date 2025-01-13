@@ -5,7 +5,7 @@
     <title>Send Signal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/Alienoid(Black).png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/Style.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
@@ -36,36 +36,84 @@
     <br />
 
     <main>
-    <div class="contactform" align="center">            
+      <div class="ContactForm">
+  <form action="">
+    <fieldset>
+      <div class="field">
+        <label for="fullname">
+          <h5>Name</h5>
+        </label>
+        <input 
+          type="text" 
+          id="fullname" 
+          placeholder="Enter your full name" 
+          required 
+        />
+      </div>
+      
+      <div class="field">
+        <label for="email">
+          <h5>Email</h5>
+        </label>
+        <input 
+          type="email" 
+          id="email" 
+          placeholder="your.email@example.com" 
+          required
+        />
+      </div>
+      
+      <div class="field">
+        <label for="companyname">
+          <h5>Company</h5>
+        </label>
+        <input 
+          type="text" 
+          id="companyname" 
+          placeholder="Your company name" 
+        />
+      </div>
+      
+      <div class="field">
+        <label for="phoneno">
+          <h5>Phone Number</h5>
+        </label>
+        <input 
+          type="tel" 
+          id="phoneno" 
+          placeholder="+1 (555) 000-0000" 
+          pattern="[0-9\s\-\+\(\)]*"
+        />
+      </div>
+      
+      <div class="field">
+        <label for="subject">
+          <h5>Subject</h5>
+        </label>
+        <input 
+          type="text" 
+          id="subject" 
+          placeholder="What is this regarding?" 
+        />
+      </div>
+      
+      <div class="field">
+        <label for="message">
+          <h5>Message</h5>
+        </label>
+        <textarea 
+          id="message" 
+          placeholder="Write your message here..." 
+          required
+        ></textarea>
+      </div>
 
-      <table border="0" class="container">
-        <tr>
-          <td width="50%" class="rightside">
-            <h1>
-              Contact Us
-           </h1>
-            <div class="rightside" align="center">
-              <form action="">
-                <input type="text" placeholder="Name *" />
-                <br />
-                <input type="email" placeholder="Email *" />
-                <br />
-                <input type="text" placeholder="Company" />
-                <br />
-                <input type="tel" placeholder="Phone" />
-                <br />
-                <input type="text" placeholder="Subject" />
-                <br />
-                <textarea name="" id="" placeholder="Message"></textarea>
-                <br />
-                <br />
-                <button class="submitbutton" align="center">Submit</button>
-              </form>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </div>
+      <div class="ButtonDiv">
+        <button class="bluebutton">Send Message</button>
+      </div>
+    </fieldset>
+  </form>
+</div>
     </main>
 
     <br />
