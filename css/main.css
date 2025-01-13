@@ -160,7 +160,7 @@ a:hover {
   padding: 2rem;
   font-family: system-ui, -apple-system, sans-serif;
   background-color: whitesmoke;
-  border: 2px solid #007bff;
+  border: 2px solid seagreen;
   border-radius: 15px;
   }
 
@@ -223,10 +223,11 @@ fieldset {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  background-color: seagreen;
 }
 
 .bluebutton:hover {
-  background: #0056b3;
+  background: palevioletred;
   transform: translateY(-1px);
 }
 
