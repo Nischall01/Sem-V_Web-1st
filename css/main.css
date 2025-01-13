@@ -207,6 +207,7 @@ fieldset {
 
 .field input::placeholder,
 .field textarea::placeholder {
+  font-family: system-ui, -apple-system, sans-serif;
   color: gray;
 }
 
