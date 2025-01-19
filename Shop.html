@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,25 +10,23 @@
 
   <body>
     <br />
-    <header>
-      <div class="logo-header_footer">
-        <a href="Home.html">
-          <img
-            class="Alienoid-logo"
-            src="assets/Alienoid(Black).png"
-            alt="Alienoid_Logo"
-          />
-        </a>
-      </div>
-      <br />
-      <nav class="navbar-header">
-        <ul class="navlist-header">
-          <li><a href="Artists.html">Artists</a></li>
-          <li><a href="Shop.html" class="current-page">Shop</a></li>
-          <li><a href="SendSignal.html">Send Signal</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="logo-header_footer">
+      <a href="Home.html">
+        <img
+          class="Alienoid-logo"
+          src="assets/Alienoid(Black).png"
+          alt="Alienoid_Logo"
+        />
+      </a>
+    </div>
+    <br />
+    <nav class="navbar-header">
+      <ul class="navlist-header">
+        <li><a href="Artists.html">Artists</a></li>
+        <li><a href="Shop.html" class="current-page">Shop</a></li>
+        <li><a href="SendSignal.html">Send Signal</a></li>
+      </ul>
+    </nav>
 
     <br />
     <br />
@@ -36,295 +34,270 @@
     <br />
 
     <main>
-      <section id="searchbar">
+      <section id="search">
         <div>
-          <input type="text" placeholder="Search" />
-          <button>
-            <img
-              src="assets/SearchIcon2.svg"
-              alt="Button_Image"
-              width="14"
-              height="12"
-            />
-          </button>
+          <input class="searchbar" type="text" placeholder="Search" />
         </div>
+        <button>
+          <img src="assets/SearchIcon2.svg" alt="Button_Image" />
+        </button>
       </section>
+
       <br />
+      <br />
+      <br />
+
       <section id="vinyl">
         <div class="title">
-          <h2 >Buy Vinyl Records</h2>
+          <h2>Buy Vinyl Records</h2>
         </div>
-        <div class="merch-table">
-        <table>
-          <tr>
-            <td>
+        <div class="vinyl-grid">
+          <div class="vinyl-item">
+            <img
+              src="assets/images/albums/Vultures_2.png"
+              alt="Vultures_2"
+              width="90"
+              height="90"
+            />
+            <p>Vultures 2</p>
+            <p><strong>$40.00</strong></p>
+            <button>
               <img
-                src="assets/images/albums/Vultures_2.png"
-                alt="Vultures_2"
-                width="90"
-                height="90"
+                src="assets/icons8-cart-48.png"
+                alt="Button_Image"
+                width="23"
+                height="23"
               />
-              <p>Vultures 2</p>
-              <p><strong>$40.00</strong></p>
-              <button>
-                <img
-                  src="assets/icons8-cart-48.png"
-                  alt="Button_Image"
-                  width="23"
-                  height="23"
-                />
-              </button>
-            </td>
-            <td>
+            </button>
+          </div>
+          <div class="vinyl-item">
+            <img
+              src="assets/images/albums/Whole_Lotta_Red.png"
+              alt="Whole_Lotta_Red"
+              width="90"
+              height="90"
+            />
+            <p>WLR</p>
+            <p><strong>$40.00</strong></p>
+            <button>
               <img
-                src="assets/images/albums/Whole_Lotta_Red.png"
-                alt="Whole_Lotta_Red"
-                width="90"
-                height="90"
+                src="assets/icons8-cart-48.png"
+                alt="Button_Image"
+                width="23"
+                height="23"
               />
-              <p>WLR</p>
-              <p><strong>$40.00</strong></p>
-              <button>
-                <img
-                  src="assets/icons8-cart-48.png"
-                  alt="Button_Image"
-                  width="23"
-                  height="23"
-                />
-              </button>
-            </td>
-            <td>
+            </button>
+          </div>
+          <div class="vinyl-item">
+            <img
+              src="assets/images/albums/Utopia.png"
+              alt="Utopia"
+              width="90"
+              height="90"
+            />
+            <p>Utopia</p>
+            <p><strong>$40.00</strong></p>
+            <button>
               <img
-                src="assets/images/albums/Utopia.png"
-                alt="Utopia"
-                width="90"
-                height="90"
+                src="assets/icons8-cart-48.png"
+                alt="Button_Image"
+                width="23"
+                height="23"
               />
-              <p>Utopia</p>
-              <p><strong>$40.00</strong></p>
-              <button>
-                <img
-                  src="assets/icons8-cart-48.png"
-                  alt="Button_Image"
-                  width="23"
-                  height="23"
-                />
-              </button>
-            </td>
-            <td>
+            </button>
+          </div>
+          <div class="vinyl-item">
+            <img
+              src="assets/images/albums/Get_Up.png"
+              alt="Get_Up"
+              width="90"
+              height="90"
+            />
+            <p>Get Up</p>
+            <p><strong>$40.00</strong></p>
+            <button>
               <img
-                src="assets/images/albums/Get_Up.png"
-                alt="Get_Up"
-                width="90"
-                height="90"
+                src="assets/icons8-cart-48.png"
+                alt="Button_Image"
+                width="23"
+                height="23"
               />
-              <p>Get Up</p>
-              <p><strong>$40.00</strong></p>
-              <button>
-                <img
-                  src="assets/icons8-cart-48.png"
-                  alt="Button_Image"
-                  width="23"
-                  height="23"
-                />
-              </button>
-            </td>
-            <td>
+            </button>
+          </div>
+          <div class="vinyl-item">
+            <img
+              src="assets/images/albums/Armageddon.jpg"
+              alt="Armageddon"
+              width="90"
+              height="90"
+            />
+            <p>Armageddon</p>
+            <p><strong>$50.00</strong></p>
+            <button>
               <img
-                src="assets/images/albums/Armageddon.jpg"
-                alt="Armageddon"
-                width="90"
-                height="90"
+                src="assets/icons8-cart-48.png"
+                alt="Button_Image"
+                title="Add to Cart"
               />
-              <p>Armageddon</p>
-              <p><strong>$50.00</strong></p>
-              <button>
-                <img
-                  src="assets/icons8-cart-48.png"
-                  alt="Button_Image"
-                  width="23"
-                  height="23"
-                />
-              </button>
-            </td>
-          </tr>
-        </table>
+            </button>
+          </div>
         </div>
       </section>
+
       <br />
       <br />
-      <section>
+      <br />
+
+      <section id="merchandise">
         <div class="title">
           <h2>Buy Merchandise</h2>
         </div>
-        <table>
-          <tr>
-            <td>
+        <div class="merchandise-grid">
+          <div class="merchandise-item">
+            <img
+              src="assets/images/merchandise/Light-Stick.png"
+              alt="NJ - Light Stick"
+              width="90"
+              height="90"
+            />
+            <p>Light Stick</p>
+            <p><strong>$49.19</strong></p>
+            <button>
               <img
-                src="assets/images/merchandise/Light-Stick.png"
-                alt="NJ - Light Stick"
-                width="90"
-                height="90"
+                src="assets/icons8-cart-48.png"
+                alt="Add to Cart"
+                width="23"
+                height="23"
               />
-              <p>Light Stick</p>
-              <p><strong>$49.19</strong></p>
-              <button>
-                <img
-                  src="assets/icons8-cart-48.png"
-                  alt="Button_Image"
-                  width="23"
-                  height="23"
-                />
-              </button>
-            </td>
-            <td>
+            </button>
+          </div>
+          <div class="merchandise-item">
+            <img
+              src="assets/images/merchandise/NewJeans-'Supernatural'-NJxMURAKAMI-(Drawstring-Bag ver.).jpg"
+              alt="NJxMurakami Drawstring Bag"
+              width="90"
+              height="90"
+            />
+            <p>Drawstring Bag</p>
+            <p><strong>$31.98</strong></p>
+            <button>
               <img
-                src="assets/images/merchandise/NewJeans-'Supernatural'-NJxMURAKAMI-(Drawstring-Bag ver.).jpg"
-                alt="NJxMurakami_Drawstring_bag"
-                width="90"
-                height="90"
+                src="assets/icons8-cart-48.png"
+                alt="Add to Cart"
+                width="23"
+                height="23"
               />
-              <p>
-                NJxMurakami <br />
-                Drawstring <br />
-                Bag
-              </p>
-              <p><strong>$31.98</strong></p>
-              <button>
-                <img
-                  src="assets/icons8-cart-48.png"
-                  alt="Button_Image"
-                  width="23"
-                  height="23"
-                />
-              </button>
-            </td>
-            <td>
+            </button>
+          </div>
+          <div class="merchandise-item">
+            <img
+              src="assets/images/merchandise/travis-scott-cactus-jack-hoodie.png"
+              alt="Cactus Jack Hoodie"
+              width="90"
+              height="90"
+            />
+            <p>Cactus Jack Hoodie</p>
+            <p><strong>$31.98</strong></p>
+            <button>
               <img
-                src="assets/images/merchandise/travis-scott-cactus-jack-hoodie.png"
-                alt="travis-scott-cactus-jack-hoodie"
-                width="90"
-                height="90"
+                src="assets/icons8-cart-48.png"
+                alt="Add to Cart"
+                width="23"
+                height="23"
               />
-              <p>
-                Cactus Jack <br />
-                Hoodie
-              </p>
-              <p><strong>$31.98</strong></p>
-              <button>
-                <img
-                  src="assets/icons8-cart-48.png"
-                  alt="Button_Image"
-                  width="23"
-                  height="23"
-                />
-              </button>
-            </td>
-            <td>
+            </button>
+          </div>
+          <div class="merchandise-item">
+            <img
+              src="assets/images/merchandise/travis-scott-brown-shirt.jpg"
+              alt="Cactus Jack Brown Shirt"
+              width="90"
+              height="90"
+            />
+            <p>Cactus Jack Brown Shirt</p>
+            <p><strong>$31.98</strong></p>
+            <button>
               <img
-                src="assets/images/merchandise/travis-scott-brown-shirt.jpg"
-                alt="travis-scott-brown-shirt"
-                width="90"
-                height="90"
+                src="assets/icons8-cart-48.png"
+                alt="Add to Cart"
+                width="23"
+                height="23"
               />
-              <p>
-                Cactus Jack <br />
-                brown shirt
-              </p>
-              <p><strong>$31.98</strong></p>
-              <button>
-                <img
-                  src="assets/icons8-cart-48.png"
-                  alt="Button_Image"
-                  width="23"
-                  height="23"
-                />
-              </button>
-            </td>
-            <td>
+            </button>
+          </div>
+          <div class="merchandise-item">
+            <img
+              src="assets/images/merchandise/All-Red-Hat-Boxset.png"
+              alt="All Red Hat Boxset"
+              width="90"
+              height="90"
+            />
+            <p>All Red Hat Boxset</p>
+            <p><strong>$31.98</strong></p>
+            <button>
               <img
-                src="assets/images/merchandise/All-Red-Hat-Boxset.png"
-                alt="All-Red-Hat-Boxset"
-                width="90"
-                height="90"
+                src="assets/icons8-cart-48.png"
+                alt="Add to Cart"
+                width="23"
+                height="23"
               />
-              <p>
-                All Red <br />
-                Hat Boxset
-              </p>
-              <p><strong>$31.98</strong></p>
-              <button>
-                <img
-                  src="assets/icons8-cart-48.png"
-                  alt="Button_Image"
-                  width="23"
-                  height="23"
-                />
-              </button>
-            </td>
-            <td>
+            </button>
+          </div>
+          <div class="merchandise-item">
+            <img
+              src="assets/images/merchandise/All-Red-Long-Sleeve-Boxset.png"
+              alt="All Red Long Sleeve Boxset"
+              width="90"
+              height="90"
+            />
+            <p>All Red Long Sleeve Boxset</p>
+            <p><strong>$31.98</strong></p>
+            <button>
               <img
-                src="assets/images/merchandise/All-Red-Long-Sleeve-Boxset.png"
-                alt="All-Red-Long-Sleeve-Boxset"
-                width="90"
-                height="90"
+                src="assets/icons8-cart-48.png"
+                alt="Add to Cart"
+                width="23"
+                height="23"
               />
-              <p>
-                All Red <br />
-                Long Sleeve <br />
-                Boxset
-              </p>
-              <p><strong>$31.98</strong></p>
-              <button>
-                <img
-                  src="assets/icons8-cart-48.png"
-                  alt="Button_Image"
-                  width="23"
-                  height="23"
-                />
-              </button>
-            </td>
-            <td>
+            </button>
+          </div>
+          <div class="merchandise-item">
+            <img
+              src="assets/images/merchandise/Jesus-Is-King-Long-Sleeve.jpg"
+              alt="Jesus Is King Long Sleeve"
+              width="90"
+              height="90"
+            />
+            <p>Jesus Is King Long Sleeve</p>
+            <p><strong>$31.98</strong></p>
+            <button>
               <img
-                src="assets/images/merchandise/Jesus-Is-King-Long-Sleeve.jpg"
-                alt="Jesus-Is-King-Long-Sleeve"
-                width="90"
-                height="90"
+                src="assets/icons8-cart-48.png"
+                alt="Add to Cart"
+                width="23"
+                height="23"
               />
-              <p>
-                Jesus Is King<br />
-                Long Sleeve <br />
-              </p>
-              <p><strong>$31.98</strong></p>
-              <button>
-                <img
-                  src="assets/icons8-cart-48.png"
-                  alt="Button_Image"
-                  width="23"
-                  height="23"
-                />
-              </button>
-            </td>
-            <td>
+            </button>
+          </div>
+          <div class="merchandise-item">
+            <img
+              src="assets/images/merchandise/Donda-Merch-Hoodie-black.png"
+              alt="Donda Hoodie"
+              width="90"
+              height="90"
+            />
+            <p>Donda Hoodie</p>
+            <p><strong>$31.98</strong></p>
+            <button>
               <img
-                src="assets/images/merchandise/Donda-Merch-Hoodie-black.png"
-                alt="Donda-Hoodie"
-                width="90"
-                height="90"
+                src="assets/icons8-cart-48.png"
+                alt="Add to Cart"
+                width="23"
+                height="23"
               />
-              <p>Donda Hoddie</p>
-              <p><strong>$31.98</strong></p>
-              <button>
-                <img
-                  src="assets/icons8-cart-48.png"
-                  alt="Button_Image"
-                  width="23"
-                  height="23"
-                />
-              </button>
-            </td>
-          </tr>
-        </table>
+            </button>
+          </div>
+        </div>
       </section>
     </main>
 

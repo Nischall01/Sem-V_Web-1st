@@ -1,6 +1,5 @@
-
 body {
-  font-family: 'Times New Roman', sans-serif;
+  font-family: "Times New Roman", sans-serif;
   margin: 0;
   padding: 0;
   background-color: white;
@@ -8,27 +7,44 @@ body {
 
 .navlist-header,
 .navlist-footer {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  padding: 1cap 3cap 1cap 3cap;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0.5rem;
   display: flex;
-  align-items: center; /* Ensures vertical alignment of all items */
+  align-items: center;
   justify-content: center;
 }
 
-.navbar-header,
+.navbar-header {
+  border: 1px black solid;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  box-shadow: 4px 4px 4px grey;
+  z-index: 1000;
+  background: white;
+}
+
 .navbar-footer {
+  border: 1px black solid;
+  box-shadow: 4px 4px 4px grey;
+  z-index: 1000;
+  background: white;
+}
+
+.streamOptionsBar {
+  background: white;
+}
+.streamOptionsList {
+  margin: 0 auto;
+  list-style: none;
   display: flex;
-  align-items: center; /* Ensures vertical alignment of all items */
   justify-content: center;
-  border: 1px green solid;
-  box-shadow: 4px 2px 2px seagreen; 
 }
 
 li {
   text-decoration: none;
-  padding: 1cap 5cap 1cap 5cap;
+  padding: 1rem 4rem;
 }
 
 .title {
@@ -50,7 +66,7 @@ li {
   height: 77px;
 }
 
-#searchbar{
+#searchbar {
   display: flex;
   justify-content: center;
 }
@@ -81,7 +97,8 @@ a {
 a:hover {
   color: seagreen;
   /* text-decoration: underline; */
-  .album-image,.single-image {
+  .album-image,
+  .single-image {
     transform: scale(1.2);
   }
 }
@@ -93,51 +110,23 @@ a:hover {
   border: 1.5px lightgrey solid;
 }
 
-.album-image,.single-image {
+.album-image,
+.single-image {
   width: 88px;
   height: 88px;
   transition: transform 0.2s;
 }
 
-.artist{
+.artist {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.artist-picture {
   display: grid;
   place-content: center;
 }
-.artist-picture {
-  display: flex;
-  justify-content: center;
-}
-
-.artist-info {
-  max-width: 75ch; /* Optimal line length for readability */
-  padding: 2rem;
-  border-radius: 12px;
-  background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.artist-info p {
-  font-family: system-ui, -apple-system, sans-serif;
-  line-height: 1.7;
-  font-size: 1.1rem;
-  color: #e0e0e0;
-  margin: 0;
-  letter-spacing: 0.015em;
-}
-
-.artist-info a {
-  color: seagreen;
-  font-family: system-ui, -apple-system, sans-serif;
-  line-height: 1.5;
-  font-size: 1em;
-  margin: 0;
-  letter-spacing: 0.015em;
-}
-  .artist-info a:hover{
-    color: palevioletred;
-  }
-
 /* Hover effect */
 .artist-info:hover {
   transform: translateY(-2px);
@@ -145,29 +134,30 @@ a:hover {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
-.current-page{
+.current-page {
   color: seagreen;
   /* text-decoration: underline; */
 }
-
-/* .borderedtextdiv {
-  border: 1px red solid;
-} */
-
-.ContactForm {
+.Contact {
+  width: 500px;
   max-width: 600px;
-  margin: 2rem auto;
   padding: 2rem;
-  font-family: system-ui, -apple-system, sans-serif;
-  background-color: whitesmoke;
+  background-color: #f9f9f9;
   border: 2px solid seagreen;
-  border-radius: 15px;
-  }
-
-
+  /* border-radius: 15px 0px 0px 15px; */
+}
+.Form {
+  width: 500px;
+  max-width: 600px;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border: 2px solid seagreen;
+  /* border-radius: 0px 15px 15px 0px; */
+}
 fieldset {
   border: none;
   padding: 0;
+  margin: 0cap;
 }
 
 .field {
@@ -177,11 +167,11 @@ fieldset {
 .field h5 {
   font-size: 0.9rem;
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   color: #333;
 }
 
-.field input, 
+.field input,
 .field textarea {
   width: 100%;
   padding: 0.8rem;
@@ -192,7 +182,7 @@ fieldset {
   background: #f8f8f8;
 }
 
-.field input:focus, 
+.field input:focus,
 .field textarea:focus {
   outline: none;
   border-color: #007bff;
@@ -237,17 +227,18 @@ fieldset {
   .ContactForm {
     padding: 1rem;
   }
-  
-  .field input, 
+
+  .field input,
   .field textarea {
     padding: 0.7rem;
   }
 }
 
 /* Optional: Animation for form fields */
-.field {
+.field,
+p {
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(15px);
   animation: fadeIn 0.5s ease forwards;
 }
 
@@ -256,4 +247,231 @@ fieldset {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.album-information {
+  box-shadow: 4px 4px 4px 4px grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.album-information img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  padding: 1rem 1.8rem 1.8rem 1.8rem;
+}
+
+.contactTable {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.artists-container {
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 25px; /* Add space between cards */
+  margin: 0 auto; /* Center container within the page */
+  padding: 20px;
+}
+
+.artist-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  background: #fff;
+  /* border-radius: 10px; */
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: 1px solid lightgray;
+}
+/* Hover effect */
+.artist-card:hover {
+  .artist-info {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  }
+}
+.artist-text {
+  flex: 1;
+  padding: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.artist-text h2 {
+  margin-top: 0;
+  color: #333;
+}
+.artist-text p {
+  color: black;
+  line-height: 1.6;
+}
+.artist-info {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+.artistImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+.socialsLogo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+.socialsLogo[alt="x"] {
+  padding-top: 2px;
+  width: 26px;
+  height: 26px;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.socials a {
+  text-decoration: none;
+  font-size: 20px;
+  color: seagreen;
+  transition: color 0.3s;
+}
+.socials a:hover {
+  color: #007bff;
+}
+
+#search {
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+  width: 23%;
+  margin: auto;
+  gap: 10px;
+  button {
+    width: 35px;
+    color: transparent;
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+}
+
+.searchbar {
+  height: 30px;
+  width: 100%;
+}
+
+/*  */
+/*  */
+
+.vinyl-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(230px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+}
+
+.vinyl-item img {
+  display: block;
+  margin: 0 auto 10px;
+  margin-top: 3cap;
+}
+
+.vinyl-item p {
+  margin: 5px 0;
+}
+
+.vinyl-item button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth button hover */
+}
+
+.vinyl-item button img {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+}
+
+.vinyl-item {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  /* border-radius: 8px; */
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.vinyl-item:hover {
+  transform: scale(1.1); /* Pop up the item */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.merchandise-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(230px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+}
+
+.merchandise-item {
+  border: 1px solid #ccc;
+  text-align: center;
+  background: #f9f9f9;
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.merchandise-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.merchandise-item button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth button hover */
+}
+
+.merchandise-item button img {
+  vertical-align: middle;
+}
+
+.merchandise-item:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add more shadow on hover */
 }

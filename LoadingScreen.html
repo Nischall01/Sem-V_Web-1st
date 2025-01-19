@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Show the loading screen by default */
+      .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      .loading-content {
+        text-align: center;
+      }
+
+      .loading-gif {
+        width: 200px; /* Adjust size as needed */
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-overlay">
+      <div class="loading-content">
+        <img
+          src="assets/gif/camping alien abduction GIF by Scorpion Dagger.gif"
+          alt="Loading..."
+          class="loading-gif"
+        />
+      </div>
+    </div>
+
+    <!-- Your main content goes here -->
+    <div id="mainContent">
+      <!-- Your website content -->
+    </div>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,25 +10,23 @@
 
   <body>
     <br />
-    <header>
-      <div class="logo-header_footer">
-        <a href="Home.html">
-          <img
-            class="Alienoid-logo"
-            src="assets/Alienoid(Black).png"
-            alt="Alienoid_Logo"
-          />
-        </a>
-      </div>
-      <br />
-      <nav class="navbar-header">
-        <ul class="navlist-header">
-          <li><a href="Artists.html">Artists</a></li>
-          <li><a href="Shop.html">Shop</a></li>
-          <li><a href="SendSignal.html" class="current-page">Send Signal</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="logo-header_footer">
+      <a href="Home.html">
+        <img
+          class="Alienoid-logo"
+          src="assets/Alienoid(Black).png"
+          alt="Alienoid_Logo"
+        />
+      </a>
+    </div>
+    <br />
+    <nav class="navbar-header">
+      <ul class="navlist-header">
+        <li><a href="Artists.html">Artists</a></li>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a href="SendSignal.html" class="current-page">Send Signal</a></li>
+      </ul>
+    </nav>
 
     <br />
     <br />
@@ -36,95 +34,140 @@
     <br />
 
     <main>
-      <div class="ContactForm">
-  <form action="">
-    <fieldset>
-      <div class="field">
-        <label for="fullname">
-          <h5>Name</h5>
-        </label>
-        <input 
-          type="text" 
-          id="fullname" 
-          placeholder="Enter your full name" 
-          required 
-        />
-      </div>
-      
-      <div class="field">
-        <label for="email">
-          <h5>Email</h5>
-        </label>
-        <input 
-          type="email" 
-          id="email" 
-          placeholder="your.email@example.com" 
-          required
-        />
-      </div>
-      
-      <div class="field">
-        <label for="companyname">
-          <h5>Company</h5>
-        </label>
-        <input 
-          type="text" 
-          id="companyname" 
-          placeholder="Your company name" 
-        />
-      </div>
-      
-      <div class="field">
-        <label for="phoneno">
-          <h5>Phone Number</h5>
-        </label>
-        <input 
-          type="tel" 
-          id="phoneno" 
-          placeholder="+1 (555) 000-0000" 
-          pattern="[0-9\s\-\+\(\)]*"
-        />
-      </div>
-      
-      <div class="field">
-        <label for="subject">
-          <h5>Subject</h5>
-        </label>
-        <input 
-          type="text" 
-          id="subject" 
-          placeholder="What is this regarding?" 
-        />
-      </div>
-      
-      <div class="field">
-        <label for="message">
-          <h5>Message</h5>
-        </label>
-        <textarea 
-          id="message" 
-          placeholder="Write your message here..." 
-          required
-        ></textarea>
-      </div>
+      <div class="contactTable">
+        <div class="Contact">
+          <!-- <h1 class="title">Contact Us</h1> -->
+          <br />
+          <h2><b>Alienoid.inc</b></h2>
+          <p>Loka, Nawalpur, Gandaki</p>
+          <a href="mailto:info@alienoid.com" style="color: grey"
+            >info@alienoid.com</a
+          >
+          <br />
+          <br />
+          <br />
+          <h4>Customer Service</h4>
+          <p>Tel: +977 9824277613</p>
+          <a href="mailto:info@alienoid.com" style="color: grey"
+            >stuff@alienoid.com</a
+          >
+          <br />
+          <br />
+          <br />
+          <h4>Demos</h4>
+          <a href="mailto:info@alienoid.com" style="color: grey"
+            >demos@alienoid.com</a
+          >
+          <br />
+          <br />
+          <br />
+          <h4>Booking</h4>
+          <a href="mailto:info@alienoid.com" style="color: grey"
+            >Booking@alienoid.com</a
+          >
+          <br />
+          <br />
+          <br />
+          <h4>Music Licensing & Publishing</h4>
+          <a href="mailto:info@alienoid.com" style="color: grey"
+            >mlp@alienoid.com</a
+          >
+        </div>
 
-      <div class="ButtonDiv">
-        <button class="bluebutton">Send Message</button>
+        <div class="Form">
+          <form action="">
+            <fieldset>
+              <div class="field">
+                <label for="fullname">
+                  <h5>Name</h5>
+                </label>
+                <input
+                  type="text"
+                  id="fullname"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="email">
+                  <h5>Email</h5>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="your.email@example.com"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="companyname">
+                  <h5>Company</h5>
+                </label>
+                <input
+                  type="text"
+                  id="companyname"
+                  placeholder="Your company name"
+                />
+              </div>
+
+              <div class="field">
+                <label for="phoneno">
+                  <h5>Phone Number</h5>
+                </label>
+                <input
+                  type="tel"
+                  id="phoneno"
+                  placeholder="+1 (555) 000-0000"
+                  pattern="[0-9\s\-\+\(\)]*"
+                />
+              </div>
+
+              <div class="field">
+                <label for="subject">
+                  <h5>Subject</h5>
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder="What is this regarding?"
+                />
+              </div>
+
+              <div class="field">
+                <label for="message">
+                  <h5>Message</h5>
+                </label>
+                <textarea
+                  id="message"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="ButtonDiv">
+                <button class="bluebutton">Send Message</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </div>
-    </fieldset>
-  </form>
-</div>
     </main>
 
     <br />
     <br />
 
     <footer>
-      <a href="mailto:info@alienoid.com" class="copyright-footer">info@alienoid.com</a>
+      <a
+        href="mailto:info@alienoid.com"
+        class="copyright-footer"
+        style="color: grey"
+        >info@alienoid.com</a
+      >
       <div class="copyright-footer">
         <p>Copyright &copy; 2024 Alienoid. All rights reserved.</p>
       </div>
-
     </footer>
     <br />
   </body>
